@@ -1,7 +1,7 @@
-console.log("--------Step 1-------");
 var bankName;
-console.log(bankName,"Data type of SBI bank is:",typeof bankName);
+console.log(bankName);
 var bankName='SBI Bank';
+console.log(bankName,"Data type of SBI Bank is:",bankName);
 console.log(bankName,"Data type of SBI Bank is:",typeof bankName);
 console.log("---------step 2----------");
 var marks='90%';
@@ -16,7 +16,3 @@ var totalCount="Hundred and seven";
 console.log("Data type is",typeof totalCount);
 totalCount=107;
 console.log("Total count is",totalCount,"Data type of updated value of count",typeof totalCount);
-
-
-
-
