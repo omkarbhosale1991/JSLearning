@@ -36,6 +36,8 @@ function persnalDetails(firstName,LastName,collageName)
 }
 persnalDetails("Omkar","Bhosale","AIT,Vita")
 
+
+
 console.log("------------------------- Step 3 ---------------------------");
 function swapValuesDude(value1,value2)
 {
@@ -47,6 +49,8 @@ function swapValuesDude(value1,value2)
 }
 swapValuesDude("Virat","Anushka");
 var swap= swapValuesDude(1000,2000);
+
+
 console.log("--------------------step 4---------------------");
 
 function addThreeValues(num1,num2,num3)
