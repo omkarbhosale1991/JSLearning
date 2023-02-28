@@ -3,7 +3,7 @@
 // Year is multiple of 4 and not multiple of 100.
 
 var check_leap_Year = function (leap_year) {
-  if ( leap_year % 4 == 0 && leap_year % 400 == 0 && leap_year % 100 != 0)
+  if ( leap_year % 4 == 0 && leap_year % 100 != 0 || leap_year % 400 == 0 )
   {
     console.log(`${leap_year} is leap year`);
   }
