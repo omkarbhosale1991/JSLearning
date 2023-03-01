@@ -6,11 +6,11 @@ function sringHandsOn() {
   var findLength = str.length;
   console.log("Length of string is", findLength);
   console.log(`========== step 3=============`);
-  var  strAfterTrim = str.trim;
+  var  strAfterTrim = str.trim();
   console.log("extra spaces removed from str string is", str.trim()," and its length is",str.length);
   console.log(`========== step 4=============`);
-  console.log("Remove extra spaces",strAfterTrim);
-  var resultCount = findLength - strAfterTrim;
+  console.log("Remove extra spaces is ",strAfterTrim);
+  var resultCount = findLength - strAfterTrim.length;
   console.log(resultCount);// need help
   console.log(`========== step 5=============`);
   console.log(` frist and last char after trim`);

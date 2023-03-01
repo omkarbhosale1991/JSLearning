@@ -4,12 +4,19 @@
 
 var check_leap_Year = function (leap_year) {
     //unhappy path
-    if (leap_year== null ||leap_year==undefined||leap_year===NaN ) 
+    if (leap_year= null || leap_year==undefined || leap_year=="twenty twenty"  ) 
     {
-    console.log(`Please re-enter Year correctly`);    
+    console.log(`Please re-enter Year correctly`);  
     }
+  
     
-  if ( leap_year % 4 == 0 && leap_year % 100 != 0 || leap_year % 400 == 0 )
+    function nan(num)
+     {
+      if (isNaN(num))
+      console.log(`Please re-enter Year correctly`);
+      
+    }
+  if ( leap_year % 4 == 0 && leap_year % 100 != 0 && leap_year % 400 == 0 )
   {
     console.log(`${leap_year} is leap year`);
   }
