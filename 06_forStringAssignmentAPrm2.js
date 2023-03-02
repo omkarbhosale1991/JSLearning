@@ -1,13 +1,15 @@
 console.log(`========== Last word char count =======`);
 function lastWordcharCount (str) 
 {
-  count = 0; 
+  var count = 0; 
+  var string= str.split(` `)
   for (let index = 0;index <= str.length;index++)
   {
-    var
-    var char = str.charAt(lastcharAtindex);
-   
-      count = count + char;  
+  
+   if (index===str.length-1)
+    {
+    count = string(index).length;
+   }
      
    }
     
