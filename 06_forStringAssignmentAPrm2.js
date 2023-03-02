@@ -4,12 +4,10 @@ function lastWordcharCount (str)
   count = 0; 
   for (let index = 0;index <= str.length;index++)
   {
-    var char = str.charAt(index);
-    if (char==" ")
-     {
+    var
+    var char = str.charAt(lastcharAtindex);
+   
       count = count + char;  
-      break;
-    }
      
    }
     
