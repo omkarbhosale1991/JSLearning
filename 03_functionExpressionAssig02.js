@@ -58,5 +58,7 @@ function wordLength(word) {
     var result=length%2==0 ?`Even`:`Odd`;
     return result;
 }
-console.log(`given string is ${wordLength(`Java Script`)}  `);
-console.log(`given string is ${wordLength(`Devloper`)}`);
+var result=wordLength(`Java Script`);
+var result=wordLength(`Devloper`);
+// console.log(`given string is ${wordLength(`Java Script`)}`);
+// console.log(`given string is ${wordLength(`Devloper`)}`);
