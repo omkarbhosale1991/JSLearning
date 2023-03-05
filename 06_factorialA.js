@@ -1,15 +1,27 @@
-function fact(num) {
-let factorial=1;
-  for (let index = num; index >= 1; index--) {
-    
-factorial=factorial*index;
 
-  }
-  if (num == null || num == undefined || num==0) {
-    var str=console.log(`re-enter correct value`);
-    return str;
-  }
-  
+function factorialOfNumber(num)
+ {
+
+if (num == null || num ==undefined || (isNaN(num) && typeof num === "str"))
+ {
+  console.log(`Given value ==>> ${num} is invalid , re-enter correct value`);
 }
-fact(5);
-console.log(`factorial of ${num} is ${factorial}`);
+factorial=1;
+  for (let index = num; index >= 1; index--)              
+   {
+    factorial=index* factorial;
+   }
+   console.log(`factorial of ${num} is ${factorial}`);
+  }
+
+factorialOfNumber(5);
+factorialOfNumber(3);
+factorialOfNumber(null);
+factorialOfNumber(8);
+factorialOfNumber(undefined); //unexpected result
+factorialOfNumber(9)
+factorialOfNumber(0)
+
+
+
+
