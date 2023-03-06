@@ -30,8 +30,11 @@ console.log(`Insert dragon fruit before water melon ==>> ${arraySeasonalFruits}`
 console.log(`========== replace element  ===============`);
 var arraySeasonalFruits=["Banana","Orange","Apple","Mango","Water melon"]
 console.log(`Before replacing element is==>> ${arraySeasonalFruits}`);
-const kivi=arraySeasonalFruits.slice(1,"Orange","Kivi");
-console.log(`Replace Orange with Kivi is: ${kivi}`);
+arraySeasonalFruits[2] = "kiwi"
+console.log(`Replace Orange with Kivi is: ${arraySeasonalFruits[2]} `);
+
+// const kiwi=arraySeasonalFruits.splice(1,"Orange","Kiwi");
+// console.log(`Replace Orange with Kivi is: ${kiwi}`);
 
 // arraySeasonalFruits.replace("Orange","Kivi");// ------------wrong logic
 
