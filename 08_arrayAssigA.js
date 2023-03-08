@@ -1,9 +1,13 @@
 var arraySeasonalFruits=["Banana","Orange","Apple","Mango","Water melon"]
+
 console.log(`============ log first and last element ============`);
+
+console.log(`=============== log first ele ==================`);//wrong
 console.log(arraySeasonalFruits);
 arraySeasonalFruits.push();
 console.log(`Last element of array is ==>> ${arraySeasonalFruits}`);
-console.log(`================ last element==============`);
+
+console.log(`================ log last element==============`);//wrong
 console.log(arraySeasonalFruits);
 
 console.log(`========== add  element in first place ===============`);
