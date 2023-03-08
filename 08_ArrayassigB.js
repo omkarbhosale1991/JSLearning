@@ -44,19 +44,17 @@ console.log(`total sum of odd number is ${sumOfOdd}`);
 
 console.log(`================= Sum of all even numbers index in array ===============`);
 console.log(arrayNumbers);
-const evenNumb=[];
 let sum=0;
 for (let index = 0; index < arrayNumbers.length; index++) {
     const sumOfeven=arrayNumbers[index]
     sum=sum + sumOfeven;
      // sum=sum+2;
-    if (sum%2==0) {
-
-evenNumb.push(sum)
-      
-
-    }
+     if (num %2==0) {
+        console.log(`Even number index in array is ${num}`);
+       sumOfEvn= sumOfEvn+ num;
+    }  
 }
+
 console.log(`Sum of all even numbers index in array ${sum}`);
 
 console.log(`================= Sum of all odd numbers index in array ===============`);
