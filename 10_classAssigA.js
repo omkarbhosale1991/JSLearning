@@ -60,11 +60,24 @@ console.log(`------------------- Traversing  Object in array ----------------`);
   const coep = new college("COEP","Pune","Engineering",100,1500);
   console.log(coep);
 
-  function traveseObject(arg1)
-   {
-    arg={}
-   for (let index = 0; index < array.length; index++) {
-    const element = array[index];
+  console.log(`-------------------- using function ---------------`);
+//   function traveseObject(arg1)
+//    {
+//     arg={}
+//    for (let index = 0; index < array.length; index++) {
+//     const element = array[index];
     
-   } 
-  }
+//    } 
+//   }
+console.log(` ------------------- Finding prime no. ------------------`);
+
+function primeNum(num) {
+    if (num%2==0 ) {
+        console.log(`${num} is not prime number`);    
+    } 
+    if (num%2==1 && num/num==1) {
+        console.log(`${num} is prime number`); 
+    }
+}
+let primeNumber=primeNum(11);
+console.log(primeNumber);
