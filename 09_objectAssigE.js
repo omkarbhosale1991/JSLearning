@@ -3,10 +3,10 @@ bankName: `State Bank Of India`,
 location: `Kolhapur`,
 accountNo:123466789,
 ifscCode: `SBI00001234`,
-interstRate: `12%`, 
+interrestRate: `12%`, 
 showDetails: function () {
     console.log(` bankName is ${this.bankName},location is ${this.location}, account Number is ${this.accountNo},
-    ifsc code of bank is ${this.ifscCode}, bank intrest rate is ${this.interstRate} `);
+    ifsc code of bank is ${this.ifscCode}, bank intrest rate is ${this.interrestRate} `);
 }
 }
 let sbibank=sbiBank.showDetails()
@@ -17,10 +17,10 @@ bankName:`axisBank`,
 location:`Pune`,
 accountNo:0987546459,
 ifscCode:`AXIS0007845`,
-interstRate:`10%`,
+interrestRate:`10%`,
 showDetails: function () {
     console.log(` bankName is ${this.bankName},location is ${this.location}, account Number is ${this.accountNo},
-    ifsc code of bank is ${this.ifscCode}, bank intrest rate is ${this.interstRate} `);
+    ifsc code of bank is ${this.ifscCode}, bank intrest rate is ${this.interrestRate} `);
 }
 }
 let axisbank=axisBank.showDetails()
@@ -30,10 +30,10 @@ const hdfcBank = {
     location: `Satara`,
     accountNo:145689153315,
     ifscCode:`HDFC002457`,
-    interstRate:`14%`,
+    interrestRate:`14%`,
     showDetails: function () {
         console.log(` bankName is ${this.bankName},location is ${this.location}, account Number is ${this.accountNo},
-        ifsc code of bank is ${this.ifscCode}, bank intrest rate is ${this.interstRate} `);
+        ifsc code of bank is ${this.ifscCode}, bank intrest rate is ${this.interrestRate} `);
     }
 }
 let hdfcbank=axisBank.showDetails()
@@ -43,10 +43,10 @@ console.log(hdfcbank);
     location:`Sangli`,
     accountNo:16649879523,
     ifscCode:`YESY0004578`,
-    interstRate:`13%`,
+    interrestRate:`13%`,
     showDetails: function () {
         console.log(` bankName is ${this.bankName},location is ${this.location}, account Number is ${this.accountNo},
-        ifsc code of bank is ${this.ifscCode}, bank intrest rate is ${this.interstRate} `);
+        ifsc code of bank is ${this.ifscCode}, bank intrest rate is ${this.interrestRate} `);
     }
  }
  let yesbank=axisBank.showDetails()
