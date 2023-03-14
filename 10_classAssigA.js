@@ -15,9 +15,13 @@ class vehicle {
     this.mileage = mileage;
     this.color = color;
   }
+  showDetails(){
+    console.log(`Bank Details: ${this.bankName} ${this.location} ${this.account} ${this.ifsc} ${this.interestRate} `);
+}
 }
 const tata = new vehicle("TATA Nexon EX ", 4.5, 2023, 4, 20,"read");
-console.log(tata);
+// console.log(tata);
+tata.showDetails()
 const bmw = new vehicle( "BMW i7",5,2022,4,10,"gray");
 console.log(bmw);
 const  mahindra = new vehicle ("mahindra thar",3.5,2018,2,10,"Black");
@@ -47,7 +51,9 @@ console.log(`------------------- Traversing  Object in array ----------------`);
         this.facalty=facalty;
         this.numberOfTeachers=numberOfTeachers;
         this.numberOfStudent=numberOfStudent;
+        
     }
+    
   }
   const ait = new college("AIT","VITA","Engineering", 50,1200);
   console.log(ait);
@@ -59,6 +65,7 @@ console.log(`------------------- Traversing  Object in array ----------------`);
   console.log(ghali);
   const coep = new college("COEP","Pune","Engineering",100,1500);
   console.log(coep);
+
 
   console.log(`-------------------- using function ---------------`);
 //   function traveseObject(arg1)
