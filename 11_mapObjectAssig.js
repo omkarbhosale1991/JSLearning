@@ -39,14 +39,17 @@ mapOfAllBanks.set(`47894310456`,iciciBank);
 mapOfAllBanks.set(`01564894554`,kotakBank);
 mapOfAllBanks.set(`4845134658`,hdfcBank);
 mapOfAllBanks.set(`486131612`,panjabBank);
+
  const keyInMap=mapOfAllBanks.keys()
+
  for (const key of keyInMap) {
     const ele = mapOfAllBanks.get(key)
     console.log(key,ele);
  }
 
  for (const value of mapOfAllBanks) {
-    
+   // console.log(value,ele); // error
+    console.log(value,keyInMap);
     // console.log(`${value.bank_name},${value.account_no},${value.interest_rate}`);
     
  }

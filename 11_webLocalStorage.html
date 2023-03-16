@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Local Storage</title>
+</head>
+<body>
+    <h2> Web Local Storage </h2>
+    <script>
+        // var getRemoveItem=" Get item and Remove item";
+        window.localStorage.setItem("name", "Omkar Annasaheb Bhosale");
+        window.localStorage.setItem("city", "Gadhinglaj");
+        window.localStorage.setItem("pinCode", "416502");
+        window.localStorage.setItem("District","Kolhapur");
+    
+        const fullName= window.localStorage.getItem("name");
+        console.log(fullName);
+        const city=window.localStorage.getItem("city");
+        console.log(city);
+        const pinCode=window.localStorage.getItem("pincode");
+        console.log(pinCode);
+        const district=window.localStorage.getItem("District");
+        console.log(district);
+      //----------------------------------------------------------------------
+        const removeCity=window.localStorage.removeItem("city");
+        console.log(removeCity);
+        //------------------------------------------------------------------
+
+        // const setItem=window.localStorage.setItem("planet","Earth");
+        // console.log(setItem);
+
+        //-----------------------------------------------------------------------
+        //  const clear=window.localStorage.clear()
+        // console.log(clear); 
+
+        //-----------------------------------------------------------------------------
+
+        // const removeKey=window.localStorage.removeItem("Earth");
+        // console.log(removeKey);
+
+        //--------------------------------------------------------------------------------
+     
+          // const keyImdex=window.localStorage.key("5");
+        // console.log(keyIndex);
+
+        
+    </script>
+</body>
+</html>

@@ -29,6 +29,9 @@ setOfAllBank.add(kotakBank);
 setOfAllBank.add(hdfcBank);
 setOfAllBank.add(panjabBank);
 
+console.log(setOfAllBank);
+
+console.log(`------------- traversing in set ------------`);
 for (const value of setOfAllBank) //-----------traversing -------------
  {
     console.log(`${value.bank_name},${value.location},${value.account_no},${value.ifsc},${value.interest_rate}`);
