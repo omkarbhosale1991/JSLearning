@@ -22,9 +22,10 @@ const panjabBank= new Bank(`Panjab National Bank`,`Baramati`,`486131612`,`PANB00
 
 const mapOfAllBanks = new Map(); //             new ===>> don't forgot
 
-// mapOfAllBanks.set(`axis`,account_no)
-// const ele = mapOfAllBanks.get(`axis`)
-// console.log(ele);                --------------------------- wrong---------
+const acc =mapOfAllBanks.set(`axis`,axisBank); // value ==>> bank name
+const element = mapOfAllBanks.get(`axis`);
+console.log(element.accountNo);  // to get element in bank
+console.log(element.interestRate); // to get element in bank
 
 //  mapOfAllBanks.set(`axis001`,axisBank)
 //  const ele = mapOfAllBanks.get(`axis001`)
@@ -33,13 +34,14 @@ const mapOfAllBanks = new Map(); //             new ===>> don't forgot
 // mapOfAllBanks.set(`axis001`,axisBank)
 //  const ele = mapOfAllBanks.get(`axis001`)
 // console.log(ele.account_no); //-------------------- use forof loop and " keys" for finding valu of all bank acc no.
-mapOfAllBanks.set(`0145789456`,axisBank);
-mapOfAllBanks.set(`45934456`,sbiBank);
-mapOfAllBanks.set(`47894310456`,iciciBank);
-mapOfAllBanks.set(`01564894554`,kotakBank);
-mapOfAllBanks.set(`4845134658`,hdfcBank);
-mapOfAllBanks.set(`486131612`,panjabBank);
+mapOfAllBanks.set(`axisBank001`,axisBank);
+mapOfAllBanks.set(`sbiBank002`,sbiBank);
+mapOfAllBanks.set(`iciciBank003`,iciciBank);
+mapOfAllBanks.set(`kotakBank004`,kotakBank);
+mapOfAllBanks.set(`hdfcBank005`,hdfcBank);
+mapOfAllBanks.set(`panjabBank006`,panjabBank);
 
+console.log(`---------------------- travarsing map -------------------`);
  const keyInMap=mapOfAllBanks.keys()
 
  for (const key of keyInMap) {
@@ -47,9 +49,5 @@ mapOfAllBanks.set(`486131612`,panjabBank);
     console.log(key,ele);
  }
 
- for (const value of mapOfAllBanks) {
-   // console.log(value,ele); // error
-    console.log(value,keyInMap);
-    // console.log(`${value.bank_name},${value.account_no},${value.interest_rate}`);
-    
- }
+
+ 
