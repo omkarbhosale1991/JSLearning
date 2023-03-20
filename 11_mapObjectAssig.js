@@ -43,9 +43,8 @@ mapOfAllBanks.set(`panjabBank006`,panjabBank);
 
 console.log(`---------------------- travarsing map -------------------`);
  const keyInMap=mapOfAllBanks.keys()
-
  for (const key of keyInMap) {
-    const ele = mapOfAllBanks.get(key)
+    const ele = mapOfAllBanks.get(key);
     console.log(key,ele);
  }
 
