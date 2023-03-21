@@ -18,16 +18,31 @@ const empMahi = new Employee(99, `Mahesh`, `HR`, 85000, `Infy`);
 
 console.log(`------- Find all the employees working in ‘TCS’--------`);
 
-arrayEmployees=[`empAnil`,`empRadha`,`empRishi`,`empSonali`,`empMonika`,`empViny`,`empMahi`];
+const arrayEmployees=[empAnil,empRadha,empRishi,empSonali,empMonika,empViny,empMahi];
+// using for  loop------------------
+// for (let index = 0; index < arrayEmployees.length; index++) {
+//   const element = arrayEmployees[index];
+//   if (Employee.empCompany==`TCS`) {
+//     console.log(`Employee Name is:${empName} Company Name is: ${empCompany}`);
+    
+//   }
 
-for (const value of arrayEmployees) {
-if (value==`TCS`) {
-  console.log(value);
+// }
+
+// using forof loop------------
+for (const value of Employee) {
+  if (Employee.empCompany==`TCS`) {
+    console.log(`Employee Name is:${empName} & Company Name is: ${empCompany}`);
+    
+  }
 }
-}
 
-// let array1=[]
-// if (arrayEmployees==`TCS`) {
 
-//     console.log(`employees working in ‘TCS’ is ${array1} `);
+
+// using for in loop------------
+// for (const key in Employee) {
+//   if (Object.hasOwnProperty.call(Employee, key)) {
+//     const element = Employee[key];
+    
+//   }
 // }
