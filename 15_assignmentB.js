@@ -16,7 +16,7 @@ const empViny = new Employee(88,`Vinayak`, `IT`, 75000, `TCS`);
 const empMahi = new Employee(99, `Mahesh`, `HR`, 85000, `Infy`);
 
 
-console.log(`------- Find all the employees working in ‘TCS’--------`);
+console.log(`------- Find all the employees working in TCS--------`);
 
 const arrayEmployees=[empAnil,empRadha,empRishi,empSonali,empMonika,empViny,empMahi];
 // using for  loop------------------
@@ -30,19 +30,12 @@ const arrayEmployees=[empAnil,empRadha,empRishi,empSonali,empMonika,empViny,empM
 // }
 
 // using forof loop------------
-for (const value of Employee) {
-  if (Employee.empCompany==`TCS`) {
-    console.log(`Employee Name is:${empName} & Company Name is: ${empCompany}`);
-    
+for (const value of arrayEmployees) {
+  if (value.empCompany ==`TCS`) {
+    const empDetails=empAnil.empCompany;
+    console.log(empDetails);
+
+    // console.log(`Employee Name is:${empName} & Company Name is: ${empCompany}`);  
   }
+
 }
-
-
-
-// using for in loop------------
-// for (const key in Employee) {
-//   if (Object.hasOwnProperty.call(Employee, key)) {
-//     const element = Employee[key];
-    
-//   }
-// }
