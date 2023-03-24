@@ -37,13 +37,12 @@ arrayEmployee.forEach(employee=>
 });
 
 console.log(` --------------sum of all employees salary ---------------`);
-
+sum=0;
 arrayEmployee.forEach(employee=>{
-    let allEmployeesSalary=employee.salary
- if (allEmployeesSalary>=0) {
-    allEmployeesSalary= sum(employee);
-    console.log(allEmployeesSalary); 
- }
+   
+    sum= sum+ employee;
+    console.log(sum); 
+
 });
 
 console.log(`---------- avrage salary ----------`);
@@ -52,8 +51,8 @@ console.log(`---------- avrage salary ----------`);
 console.log(`----------- it of hr employees salary >=75000 ------------`);
 
 arrayEmployee.forEach(employee => {
-
-    if(employee.empDept==`IT`|| employee.empDept==`HR` && salary>=75000) {
+let salary=0;
+    if( salary>=75000 && employee.empDept==`IT`|| employee.empDept==`HR`) {
         console.log(employee);
     }
 });
