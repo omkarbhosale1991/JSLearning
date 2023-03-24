@@ -16,7 +16,9 @@ class Employee {
   const empMahi = new Employee(99, `Mahesh`, `HR`, 85000, `Infy`);
 
   const arrayEmployee = [empAnil, empRadha, empRishi, empSonali, empMonika, empViny, empMahi];
+
   const  mapEmployee= new Map();
+
   mapEmployee.set(22,empAnil);
   mapEmployee.set(33,empRadha);
   mapEmployee.set(55,empRishi);
@@ -24,6 +26,9 @@ class Employee {
   mapEmployee.set(77,empMonika);
   mapEmployee.set(88,empViny);
   mapEmployee.set(99,empMahi);
+
+  const keyInMap=arrayEmployee.key(); // arrayEmployee.key is not a function ??
  arrayEmployee.forEach(element => {
-    console.log(element);
+   const empDetails= mapEmployee.get(keyInMap);
+    console.log( empDetails);
   });
