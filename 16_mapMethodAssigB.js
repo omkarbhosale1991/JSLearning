@@ -17,18 +17,26 @@ class Employee {
 
   const arrayEmployee = [empAnil, empRadha, empRishi, empSonali, empMonika, empViny, empMahi];
 
-  const  mapEmployee= new Map();
+  const mapEmployee= new Map();
+  mapEmployee.set(`emp1`,empAnil);
+  mapEmployee.set(`emp2`,empRadha);
+  mapEmployee.set(`emp3`,empRishi);
+  mapEmployee.set(`emp4`,empSonali);
+  mapEmployee.set(`emp5`,empMonika);
+  mapEmployee.set(`emp6`,empViny);
+  mapEmployee.set(`emp7`,empMahi);
 
-  mapEmployee.set(22,empAnil);
-  mapEmployee.set(33,empRadha);
-  mapEmployee.set(55,empRishi);
-  mapEmployee.set(66,empSonali);
-  mapEmployee.set(77,empMonika);
-  mapEmployee.set(88,empViny);
-  mapEmployee.set(99,empMahi);
-
-  const keyInMap=arrayEmployee.keys(); // arrayEmployee.key is not a function ??
- arrayEmployee.forEach(element => {
-   const empDetails= mapEmployee.get(keyInMap);
-    console.log( empDetails);
+  arrayEmployee.forEach(element => {
+    const ele =mapEmployee.get(key)
+console.log(ele.empName);    
   });
+// const keyInMap=mapEmployee.keys()
+// for (const key of keyInMap) {
+//    const ele = mapEmployee.get(key);
+//    console.log(key,ele);
+// }
+console.log(`---------- list of department ---------`);
+
+console.log(` -------- list of emp id --------`);
+
+console.log( `------- emp work in TCS -------`);

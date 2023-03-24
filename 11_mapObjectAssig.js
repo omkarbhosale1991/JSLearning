@@ -33,7 +33,7 @@ console.log(element.interestRate); // to get element in bank
 
 // mapOfAllBanks.set(`axis001`,axisBank)
 //  const ele = mapOfAllBanks.get(`axis001`)
-// console.log(ele.account_no); //-------------------- use forof loop and " keys" for finding valu of all bank acc no.
+// console.log(ele.account_no); //-------------------- use forof loop and " keys" for finding value of all bank acc no.
 mapOfAllBanks.set(`axisBank001`,axisBank);
 mapOfAllBanks.set(`sbiBank002`,sbiBank);
 mapOfAllBanks.set(`iciciBank003`,iciciBank);
