@@ -15,6 +15,5 @@ console.log(multiNum);
 console.log(`-------- num in between 20 to 50-------`);
 const inBetweenNum= arrayNumbers.filter((value)=>{if (value>=20 && value<=50) {
     return value;
-    
-}})
+}});
 console.log(inBetweenNum);
