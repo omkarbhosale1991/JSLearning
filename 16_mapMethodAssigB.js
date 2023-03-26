@@ -26,17 +26,18 @@ class Employee {
   mapEmployee.set(`emp6`,empViny);
   mapEmployee.set(`emp7`,empMahi);
 
-  arrayEmployee.forEach(element => {
-    const ele =mapEmployee.get(key)
-console.log(ele.empName);    
-  });
-// const keyInMap=mapEmployee.keys()
-// for (const key of keyInMap) {
-//    const ele = mapEmployee.get(key);
-//    console.log(key,ele);
-// }
+//  mapEmployee.forEach(value,key => {
+//     console.log(value,key);
+//   });
+
 console.log(`---------- list of department ---------`);
 
 console.log(` -------- list of emp id --------`);
 
 console.log( `------- emp work in TCS -------`);
+mapEmployee.forEach(employee => {
+  if (employee==`TCS`) {
+    return employee.empName
+    // return console.log(empName);
+  }
+});

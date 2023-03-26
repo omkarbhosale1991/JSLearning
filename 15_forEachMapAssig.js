@@ -27,8 +27,8 @@ class Employee {
   mapEmployee.set(88,empViny);
   mapEmployee.set(99,empMahi);
 
-  const keyInMap=arrayEmployee.keys(); // arrayEmployee.key is not a function ??
- arrayEmployee.forEach(element => {
-   const empDetails= mapEmployee.get(keyInMap);
-    console.log( empDetails);
-  });
+
+mapEmployee.forEach((value,key) => {
+  
+  console.log(value,key);
+});
