@@ -1,5 +1,5 @@
 const arrayNumbers=[20,11,40,25,37,49,9,90,60,2,19]
-console.log(`[20,11,40,25,37,49,9,90,60,2,19] `);
+console.log(`Given array is: [20,11,40,25,37,49,9,90,60,2,19] `);
 console.log(` -----------num> 50--------`);
 const newArray=arrayNumbers.filter(value=>value>50);
 console.log(newArray);

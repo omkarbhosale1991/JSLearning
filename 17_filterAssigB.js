@@ -22,7 +22,7 @@ const arrayOfTcs=arrayEmployee.filter((employee)=>{
   return employee.empCompany ==`TCS`;
 });
 arrayOfTcs.forEach((employee)=>{
-  console.log(employee);
+  console.log(`employee name is : ${employee.empName} and employee company name is : ${employee.empCompany}`);
 });
  
   console.log(`------- avg salary of employee ---------`);
