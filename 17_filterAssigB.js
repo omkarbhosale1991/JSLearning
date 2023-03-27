@@ -18,23 +18,32 @@ class Employee {
   const arrayEmployee = [empAnil, empRadha, empRishi, empSonali, empMonika, empViny, empMahi];
 
   console.log(`-------- find emp work in TCS --------`);
-
-  const newArray = arrayEmployee.filter((value)=>{if (arrayEmployee.empCompany==`TCS`) {
-    return console.log(`companyName ${value.arrayEmployee.empCompany} and name of  employee is ${value.arrayEmployee.empName}`);;
-  }});
-  console.log(newArray);
-
+const arrayOfTcs=arrayEmployee.filter((employee)=>{
+  return employee.empCompany ==`TCS`;
+});
+arrayOfTcs.forEach((employee)=>{
+  console.log(employee);
+});
+ 
   console.log(`------- avg salary of employee ---------`);
-  const salaryArray = arrayEmployee.filter((value)=>{if (arrayEmployee.empCompany==`Wipro`) {
-return value;
-  }});
-  console.log(salaryArray);
+  const arrayOfWipro=arrayEmployee.filter((employee)=>{
+    return employee.empCompany ==`Wipro`;
+  });
+  const totalSalary= arrayOfWipro.reduce((runningTotal,salarytInArrayEmployee)=>{
+    return (runningTotal + salarytInArrayEmployee.empSalary);
+  },0);
+  console.log(`Avg salary of employee work in Wipro is : ${totalSalary/arrayOfWipro.length}`);
+ 
   
   console.log(`------- avg salary of employee wipro and infy ---------`);
-  const salaryTwoArray = arrayEmployee.filter((value)=>
-  {if (arrayEmployee.empCompany==`Wipro` || arrayEmployee.empCompany==`Infy`) {
-return value;
-  }});
-  console.log(salaryTwoArray);
+
+  const arraySalaryWiproAndInfy =arrayEmployee.filter((employee)=>{
+return (employee.empCompany==`Infy`|| employee.empCompany==`Wipro`)   
+  });
+  const totalSalaryOfEmp= arraySalaryWiproAndInfy.reduce((runningTotalSalary,salaryInArrayEmployee)=>{
+return runningTotalSalary+salaryInArrayEmployee.empSalary;
+  },0);
+  console.log(`Avg salary of employee work in Wipro and Infy is : ${totalSalaryOfEmp/arraySalaryWiproAndInfy.length}`);
+
   
 
