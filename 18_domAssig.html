@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <title>Exercise time !</title>
+  </head>
+  <body>
+    <main>
+      <div id="overview">
+        <h1 id="mainhead">HTML and javaScript are crucial technologies</h1>
+        <p>the web would not work without them ...</p>
+      </div>
+      <div id="advantages">
+        <ul>
+          <li>Flexible</li>
+          <li id="second">Available</li>
+          <li>Magical</li>
+        </ul>
+      </div>
+    </main>
+    <script>
+        console.log("------h1 element heading------");
+        const mainHeading=document.querySelector("#mainhead");
+        console.log(mainHeading.innerHTML);
+        console.log("---------- second element ---------");
+        const secondAdvantage=document.querySelector("#second");
+        console.log(secondAdvantage.innerHTML);
+        console.log(" --------- div with id=Advantages--------");
+        const advDiv=document.querySelector("#advantages");
+        console.log(advDiv.innerHTML);
+    </script>
+  </body>
+</html>
