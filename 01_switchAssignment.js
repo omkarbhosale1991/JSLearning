@@ -17,7 +17,7 @@ switch (monthNumber)
         case 5:console.log(`Month of Year is ${monthNumber} May`);
         
         break;
-        case 6:console.log(`Month of Year is ${monthNumber} Junne`);
+        case 6:console.log(`Month of Year is ${monthNumber} June`);
         
         break;
         case 7:console.log(`Month of Year is ${monthNumber} July`);
@@ -42,7 +42,7 @@ switch (monthNumber)
         console.log(`Invalid Data,Please re-enter`);
         break;
 }
-console.log(`In year number of month is ${monthNumber}`);
+console.log(`In year this number of month is ${monthNumber}`);
 }
 monthOfYear(1);
 monthOfYear(2);
