@@ -63,25 +63,10 @@ const eleProfile = document.querySelector("#profile");
 eleProfile.style.color = "Blue";
 
 // delete <li> agile and jira </li>
-// const  removeElement = document.querySelector("#unorderlist",[1]);  // help from anather student
-// const removeElement = document.querySelector("#unorderList");
-// const removeEle = document.querySelector(".liItem");
-// removeElement.removeChild(removeEle);
+const removeElement = document.querySelector("#unorderList");
+const removeEle = document.querySelectorAll(".liItem");
+removeElement.removeChild(removeEle[1]);
 
-// const removeElement=document.querySelectorAll(".liItem");
-
-// removeElement[1].innerHTML =" ";
-// console.log(removeElement[1]);
-
-// const removeElement=document.querySelector("#unorderList");
-// const removeEle=document.querySelector("#agile")[1];
-// removeElement.removeChild(removeEle);
-
-// const list = document.getElementById("#unorderList");
-
-// if (list.hasChildNodes()) {
-//   list.removeChild(list.children[1]);
-// }
 console.log("====== Adding Element =====");
 const elementDiv = document.querySelector("#divProject");
 const elementP = document.createElement("p");
@@ -104,6 +89,26 @@ elementAddress.addEventListener("click", ()=>{
   console.log("mouse over.....");
   elementAddress.style.color="red"; 
 });
+const confirmElement = document.querySelector("#confirm"); //----------- "#confirm"
+confirmElement.addEventListener('click',  () => {
+   const result = confirm("Are you sure ?");
+   console.log(result);
+});
+const isEvenButton = document.querySelector("#isEvenButton");
+isEvenButton.addEventListener('click', () => {
+    const inputValue = prompt("Please enter number to check..", 0);
+    const givenNum = +inputValue;
+    if (inputValue==null || isNaN(givenNum) || givenNum<=0) {
+        alert("Invalid value");
+    }else{
+        const result = inputValue%2==0 ? true : false;
+        if(result){
+            alert("Given Number is Even");
+        }else{
+            alert("Given number is Odd");
+        }
+    }
+} );
 //-------------------------------------------------------------
 //  Assignment ==>> three hobbies in o/p ?
 
@@ -134,15 +139,36 @@ const primeNumElement= document.querySelector("#primeNumber");
 
 primeNumElement.addEventListener("click",()=>{
   const inputNum= prompt("Please enter number here",0)
-for (let index = 2; index < inputNum; index++)
- {
- if (inputNum%index==0) {
-  return false;
+// const result=inputNum%2==0 ? true : false
+if (inputNum<=0 || inputNum==1) {
+  alert(" this number is invalid, Re-enter number")
   
- }
- else
+}
+for (let index = 2; index < inputNum; index++) {
+  if (inputNum%index==0) {
 
-  return true;
+    return false
+  } 
+} return true
+
+
+if (false) {
+ alert("prime number")
+}
+else{
+ alert("not a prime number")
+}
+});
+// for (let index = 2; index < inputNum; index++)
+//  {
+//  if (inputNum%index==0) {
+//   return false;
+  
+//  }
+
+//  else
+
+//   return true;
 
   
- };
+//  };
